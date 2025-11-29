@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu Ram Food Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Raghu Ram Foods</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home_banner.png');">
+        <div class="hero-content">
+            <h1>Raghu Ram Food Products</h1>
+            <p class="hero-subtitle">Pure Desi Ghee, Straight from the Farm</p>
+            <div class="hero-about">
+                <p>
+                    At Raghu Ram Food Products, we take pride in delivering the purest and most aromatic Desi Ghee.
+                    Made from high-quality milk using traditional methods, our ghee brings the authentic taste of home
+                    to your kitchen.
+                    Experience the richness and health benefits of our premium dairy products.
+                </p>
+            </div>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- About Us section moved to Hero Banner -->
+
+    <section id="products" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('images/desi_ghee_1l.png');">
+                    </div>
+                    <h3>Desi Ghee (1 Liter)</h3>
+                    <p>Pure and aromatic, perfect for daily use.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('images/desi_ghee_500ml.png');">
+                    </div>
+                    <h3>Desi Ghee (500 ml)</h3>
+                    <p>Convenient size for small families.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('images/desi_ghee_200ml.png');">
+                    </div>
+                    <h3>Desi Ghee (200 ml)</h3>
+                    <p>Trial pack to experience the quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Raghu Ram Food Products</h3>
+                    <p>Quality food for a better life.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Details</h3>
+                    <p>Phone: +91 9911253578</p>
+                    <p>Email: contact@raghuramfoodproducts.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Raghu Ram Food Products. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
