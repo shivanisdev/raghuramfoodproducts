@@ -13,40 +13,80 @@
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Raghu Ram Foods</a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <!-- TOP BAR -->
+<!-- <div class="top-bar">
+    <div class="container top-bar-content">
+        <div class="top-bar-left">
+            <span class="top-icon">📞</span> +91 9911253578
+            <span class="separator">|</span>
+            <span class="top-icon">✉️</span> contact@raghuramfoodproducts.com
         </div>
-    </nav>
 
-    <header id="home" class="hero"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/home_banner.png');">
-        <div class="hero-content">
-            <h1>Raghu Ram Food Products</h1>
-            <p class="hero-subtitle">Pure Desi Ghee, Straight from the Farm</p>
-            <div class="hero-about">
-                <p>
-                    At Raghu Ram Food Products, we take pride in delivering the purest and most aromatic Desi Ghee.
-                    Made from high-quality milk using traditional methods, our ghee brings the authentic taste of home
-                    to your kitchen.
-                    Experience the richness and health benefits of our premium dairy products.
-                </p>
-            </div>
-            <a href="#products" class="btn">Shop Now</a>
+        <div class="top-bar-right">
+            <a href="#contact">Contact Us</a>
         </div>
-    </header>
+    </div>
+</div> -->
+    <nav class="navbar transparent-header">
+    <div class="container">
+        <a href="#" class="logo">Raghu Ram Foods</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header id="home" class="hero hero-3d">
+    <div class="floating-circle circle1"></div>
+    <div class="floating-circle circle2"></div>
+    <div class="floating-circle circle3"></div>
+
+    <div class="hero-content fade-in">
+        <h1 class="hero-title">Raghu Ram Food Products</h1>
+        <p class="hero-subtitle">Pure Desi Ghee, Straight from the Farm</p>
+
+        <p class="hero-about">
+            Experience the richness and purity of traditionally prepared Desi Ghee.
+            Made from farm-fresh milk and crafted with care for authentic taste.
+        </p>
+
+        <a href="#products" class="btn hero-btn">OUR PRODUCTS</a>
+    </div>
+</header>
+<section id="about" class="about-section fade-section">
+    <div class="container about-flex">
+        
+        <!-- LEFT IMAGE -->
+        <div class="about-left">
+            <img src="images/15KGback.png" alt="About Ghee">
+        </div>
+
+        <!-- RIGHT CONTENT (CENTERED VERTICALLY) -->
+        <div class="about-right">
+            <h2>About Us</h2>
+            <p>
+                At Raghu Ram Food Products, we bring you the purity of traditional Desi Ghee prepared using age-old Ayurvedic methods. 
+                Our ghee is made from farm-fresh cow milk ensuring natural aroma, authentic flavour, and maximum nutrition.
+            </p>
+            <p>
+                We believe in transparency, quality, and delivering farm-fresh goodness to every household. 
+                Our process is slow-cooked, ensuring every drop is rich, aromatic, and healthy.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
 
     <!-- About Us section moved to Hero Banner -->
 
@@ -55,51 +95,35 @@
             <h2 class="section-title">Our Products</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="product-image" style="background-image: url('images/desi_ghee_1l.png');">
+                <div class="product-image" style="background-image: url('images/15KG.png');">
+                </div>
+                <h3>Desi Ghee (15KG TIN)</h3>
+                <p>Pure and aromatic, made for large-scale kitchens.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('images/1L.png');">
                     </div>
                     <h3>Desi Ghee (1 Liter)</h3>
                     <p>Pure and aromatic, perfect for daily use.</p>
                 </div>
                 <div class="product-card">
-                    <div class="product-image" style="background-image: url('images/desi_ghee_500ml.png');">
+                    <div class="product-image" style="background-image: url('images/500ML.png');">
                     </div>
                     <h3>Desi Ghee (500 ml)</h3>
                     <p>Convenient size for small families.</p>
                 </div>
                 <div class="product-card">
-                    <div class="product-image" style="background-image: url('images/desi_ghee_200ml.png');">
+                    <div class="product-image" style="background-image: url('images/200ML.png');">
                     </div>
                     <h3>Desi Ghee (200 ml)</h3>
                     <p>Trial pack to experience the quality.</p>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-wrapper">
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -108,12 +132,12 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Details</h3>
-                    <p>Phone: +91 769663336</p>
-                    <p>Email: contact@raghuramfoodproducts.com</p>
+                    <p>Phone: <a href="tel:+917696633336">+91 76966 33336</a></p>
+                    <p>Email: <a href="mailto:raghuramdesighee@gmail.com">raghuramdesighee@gmail.com</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Raghu Ram Food Products. All rights reserved.</p>
+                <p>&copy; 2025 Raghu Ram Food Products. All rights reserved.</p>
             </div>
         </div>
     </footer>

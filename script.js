@@ -27,3 +27,27 @@ $(document).ready(function() {
         $(this)[0].reset();
     });
 });
+// Header Scroll Effect
+window.addEventListener("scroll", function () {
+    const header = document.querySelector(".transparent-header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+const fadeElements = document.querySelectorAll(".fade-section");
+
+function fadeOnScroll() {
+    fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (rect < windowHeight - 100) {
+            el.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", fadeOnScroll);
+window.addEventListener("load", fadeOnScroll);
